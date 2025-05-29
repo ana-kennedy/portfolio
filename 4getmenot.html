@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Get-Me-Not</title>
+    <link rel="stylesheet" href="4getmenot.css">
+</head>
+<body>
+    <div id="hero-3d"></div>
+
+    <header>
+    <section class="headlogo">
+        <div class="gohome">
+            <a href="index.html" class="home-link"><img src="assets/images/homebt.png" alt=""></a>
+        </div>
+        <h1>4get-me-not</h1>
+    </section>
+    </header>
+
+    <section class="description">
+        <h2>/description</h2>
+        <p>4get-me-not is a narrative driven adventure and golf game inspired by classic gameboy advance games i grew up with. 
+            the game is currently in development and will be available on macos and linux.
+            completely self-developed in unity and written in C#.
+        </p>
+    </section>
+
+    <section class="gameplay">
+        <h2>/gameplay</h2>
+        <p>you play as ana - that's me! a girl who takes a train
+             to alaska to be apart of the local golf tournament.
+              little do you know though... a ufo crashed in a 
+              cave outside of town! upon meeting birdie, you 
+              realize this journey will be far different than you ever imagined.
+               also, who's anastasia anyway?</p>
+    </section>
+
+    <section class="links">
+        <ul>
+            <li>
+            <a href="">/build.2 github</a>
+            <a href="">trailer</a>
+            </ul>
+        </section>
+
+
+        <footer>
+            <div class="footer-container">
+            <h2>releasing 2026</h2>
+            </div>
+        </footer>
+
+
+    <script src="4getmenot.js"></script>
+    <script type="module" src="4getmenot-cube.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const descH2 = document.querySelector('.description h2');
+        if (descH2) {
+          descH2.addEventListener('mouseenter', () => {
+            window.dispatchEvent(new CustomEvent('setCubeOpacity', { detail: { opacity: 0.2 } }));
+            descH2.classList.add('hovered');
+          });
+          descH2.addEventListener('mouseleave', () => {
+            window.dispatchEvent(new CustomEvent('setCubeOpacity', { detail: { opacity: 1 } }));
+            descH2.classList.remove('hovered');
+          });
+        }
+        const gameplayH2 = document.querySelector('.gameplay h2');
+        if (gameplayH2) {
+          gameplayH2.addEventListener('mouseenter', () => {
+            window.dispatchEvent(new CustomEvent('setCubeOpacity', { detail: { opacity: 0.2 } }));
+            gameplayH2.classList.add('hovered');
+          });
+          gameplayH2.addEventListener('mouseleave', () => {
+            window.dispatchEvent(new CustomEvent('setCubeOpacity', { detail: { opacity: 1 } }));
+            gameplayH2.classList.remove('hovered');
+          });
+        }
+      });
+    </script>
+</body>
+</html>

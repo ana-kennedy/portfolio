@@ -1,0 +1,376 @@
+@font-face {
+    font-family: 'DepartureMono';
+    src: url(assets/fonts/DepartureMono-Regular.otf);
+}
+
+@font-face {
+    font-family: 'UbuntuR';
+    src: url(assets/fonts/Ubuntu-R.ttf);
+}
+
+body {
+    background-color: transparent !important; 
+    color: white;
+    font-family: DepartureMono;
+    font-size: 3.5vw; 
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* Header */
+
+.logo 
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    max-width: none;
+    margin: 0;
+    text-align: left;
+    padding: 0.5vw 1vw; 
+    z-index: 10;
+    background: transparent !important; 
+    box-shadow: none !important; 
+    border: none !important;      
+}
+
+.logo h1, #typewriter {
+    display: inline-block;
+    min-height: 1em;
+    overflow: hidden;
+    font-family: 'UbuntuR', monospace;
+    font-size: 2.2vw;
+    white-space: pre;
+    width: auto;
+    min-width: 0;
+    word-break: break-all;
+    margin: 0;
+    padding: 0;
+    background: transparent; 
+    box-shadow: none;        
+    border: none;           
+}
+
+/* Projects */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vw;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 4vw;
+}
+
+.projects h2 {
+    font-size: 5vw;
+    letter-spacing: -1px;
+    margin-top: 0;
+}
+
+.projects h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    margin-top: -2vw;
+    gap: 2vw; 
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    font-size: 3vw;
+    margin-top: -1vw;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.projects:hover .project-link,
+.projects.show-content .project-link {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.project-link:hover {
+    color: #ff69b4;
+    background: rgba(255,255,255,0.08);
+}
+
+/* About Me */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vw;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 4vw;
+}
+
+.about h2 {
+    margin-top: 0;
+    font-size: 5vw;
+    margin-bottom: -5px;
+    letter-spacing: -1px;
+    opacity: 1; 
+    pointer-events: auto;
+    transition: opacity 0.3s;
+}
+
+.about:hover h2,
+.about:hover p,
+.about:hover ul,
+.about.show-content h2,
+.about.show-content p,
+.about.show-content ul {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.about p {
+    font-size: 3vw;
+    margin-bottom: 4vw;
+    letter-spacing: -1px;
+    margin-top: 2vw;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.about ul {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    
+}
+
+.about:hover ul {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.about li {
+    font-size: 3vw;
+    text-decoration: none;
+    margin-left: -40px;
+    list-style: none;
+    margin-bottom: 0.5vw;
+    
+}
+
+.about img
+{
+    width: 18vw;
+    max-width: 75px;
+    margin-bottom: 4vw;
+}
+
+/* Footer */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vw;
+    margin-bottom: 4vw;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 4vw;
+    background: transparent !important;  
+    box-shadow: none !important;
+    border: none !important;
+    padding-bottom: 0;
+}
+
+.contact h2 {
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+    letter-spacing: -1px;
+}
+
+.contact ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 2.5vm;
+}
+
+.contact li {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+    word-break: break-all;
+}
+
+.contact a {
+    color: #ff69b4;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact a:hover {
+    color: #fff700;
+    text-decoration: underline;
+}
+
+body > *:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.description p {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.description h2:hover + p,
+.description.show-content p {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#hero-3d {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; 
+    pointer-events: none;
+    overflow: hidden;
+    background: transparent !important;
+    transition: opacity 0.4s ease;
+    opacity: 1;
+}
+
+
+.about:hover ~ #hero-3d,
+.about.show-content ~ #hero-3d {
+    opacity: 0.2;
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .logo h1, #typewriter {
+        font-size: 12px;
+    }
+    .projects h2,
+    .about h2 {
+        font-size: 16px;
+    }
+    .projects h3,
+    .project-list,
+    .about p,
+    .about li {
+        font-size: 12px;
+    }
+    .about img {
+        width: 75px;
+    }
+    .logo,
+    .projects,
+    .about {
+        max-width: 450px;
+        padding: 0;
+    }
+    .contact {
+        max-width: 450px;
+        padding: 0;
+        margin-bottom: 32px; 
+    }
+    .contact h2 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .contact li {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 601px) {
+    body {
+        font-size: 4vw;
+    }
+    .logo h1, #typewriter {
+        font-size: 3.5vw;
+    }
+    .projects h2,
+    .about h2 {
+        font-size: 5vw;
+    }
+    .projects h3,
+    .project-list,
+    .about p,
+    .about li {
+        font-size: 3.5vw;
+    }
+    .about img {
+        width: 18vw;
+        max-width: 75px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .projects,
+    .about,
+    .contact {
+        margin-top: 4vw;
+    }
+    .project-list a {
+        font-size: 1vw;
+    }
+}
+

@@ -1,0 +1,386 @@
+html, body {
+    background: transparent !important;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section,
+main,
+article,
+section *,
+main *,
+article * {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+body > * {
+    background: transparent !important;
+}
+
+
+body > *:not(#hero-3d) {
+    position: relative;
+    z-index: 1;
+}
+
+
+#hero-3d,
+header,
+.headlogo,
+.gohome,
+.description,
+.gameplay,
+.links,
+.footer-container,
+#hero-3d * ,
+header * ,
+.headlogo * ,
+.gohome * ,
+.description * ,
+.gameplay * ,
+.links * ,
+.footer-container * {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+@font-face {
+    font-family: 'DepartureMono';
+    src: url(assets/fonts/DepartureMono-Regular.otf)
+}
+
+/* Home Button */
+
+.gohome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top:-100px;
+    z-index: 20; 
+    padding: 0.5vw 1vw;
+    background: transparent;
+}
+
+.gohome .home-link img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+    filter: invert(1);
+    transition: transform 0.6s ease, background-color 0.6s ease; 
+}
+
+.gohome .home-link img:hover {
+    transform: scale(1.1);
+    background-color: rgb(97, 201, 92);
+}
+
+/* Header */
+
+.headlogo {
+    display: flex;
+    position: relative; 
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top:100px;
+    text-align: center;
+    padding: 0.5vw 1vw;
+    z-index: 10;
+    background: transparent !important;
+    box-shadow: none !important; 
+    border: none !important; 
+}
+
+.headlogo h1
+{
+    color: white;
+    font-family: "DepartureMono";
+    font-size: 3vw;
+    margin: 0;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s, background-color 0.4s ease; 
+}
+
+.headlogo h1:hover {
+    color: #ff69b4;
+    background: rgba(255,255,255,0.08);
+    cursor:grab;
+}
+
+/* Description */
+
+.description {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 75px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.description p {
+    color: white;
+    font-family: "DepartureMono";
+    font-size: 2.5vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-top:10px;
+    width: 100%;
+    max-width: 700px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.description h2 {
+    color: white;
+    font-family: "DepartureMono";
+    font-size: 2.0vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-top:25px;
+    width: 20vw;
+    background: #ffffff !important;
+    color: #111 !important;
+    padding: 0.2em 0.0em;
+    border-radius: 0.5em;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.description h2.hovered {
+    background: #696868 !important;
+    cursor:grab;
+}
+
+.description h2:hover + p,
+.description.show-content p {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Gameplay */
+
+.gameplay {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.gameplay p {
+    color: white;
+    font-family: "DepartureMono";
+    font-size: 2.5vw;
+    letter-spacing: -0.7px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    margin-top:15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.gameplay h2 {
+    color: white;
+    font-family: "DepartureMono";
+    font-size: 2.5vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-top:25px;
+    width: 15vw;
+    background: #ffffff !important;
+    color: #111 !important;
+    padding: 0.2em 0.0em;
+    border-radius: 0.5em;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.gameplay h2.hovered {
+    background: #696868 !important;
+    cursor:grab;
+}
+
+.gameplay h2:hover + p,
+.gameplay.show-content p {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Links */
+
+.links {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.links ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.links li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.links a {
+    color: white;
+    font-family: "DepartureMono";
+    font-size: 2.7vw;
+    text-align: center;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: rgb(208, 113, 202);
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5vw;
+    margin-bottom: 0;
+    width: 100vw;
+    height: auto;
+    max-width: 450px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 4vw;
+    transition: background-color 0.4s ease; 
+}
+
+.footer-container h2 {
+    margin-top: 0;
+    font-size: 3vw;
+    font-family: DepartureMono;
+    margin-bottom: -5px;
+    letter-spacing: -1px;
+    opacity: 1; 
+    cursor:wait;
+    transition: opacity 0.3s, background-color 0.4s ease; 
+    color: white;
+}
+
+.footer-container h2:hover {
+    color: #ff69b4;
+    background: rgba(255,255,255,0.08);
+}
+
+footer {
+    background: transparent !important;
+    height: auto !important;
+    margin: 0;
+    padding: 0;
+    border: none !important;
+}
+
+body {
+    font-size: 4vw;
+}
+
+
+#cube-section {
+    display: none;
+}
+
+#cube-3d {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    .headlogo h1 {
+        font-size: 3.5vw;
+    }
+    .description p {
+        font-size: 1.5vw;
+    }
+    .gameplay p {
+        font-size: 1.5vw;
+    }
+    .description h2 {
+        font-size: 2vw;
+    }
+    .gameplay h2 {
+        font-size: 2vw;
+    }
+    .links a {
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        font-size: 14px;
+    }
+    .headlogo h1 {
+        font-size: 2vw;
+    }
+    .description p,
+    .gameplay p {
+        font-size: 1vw;
+    }
+    .description h2,
+    .gameplay h2 {
+        font-size: 1.2vw;
+    }
+    .links a {
+        font-size: 1vw;
+    }
+    #cube-3d {
+        width: 220px;
+        height: 220px;
+        max-width: 220px;
+        max-height: 220px;
+    }
+    .footer-container h2 {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .links {
+        margin-top: 300px;
+    }
+}
+
+@media (min-width: 901px) {
+    .links {
+        margin-top: 100px;
+    }
+}
+
+
+

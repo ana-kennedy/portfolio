@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'DepartureMono';
+    src: url(assets/fonts/DepartureMono-Regular.otf);
+}
+
+html, body {
+    background: transparent !important;
+}
+
+body {
+    color:white;
+    font-family: DepartureMono;
+    font-size:1vw;
+    font-weight: 200;
+}
+
+/* Home Button */
+
+.gohome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top:0px;
+    z-index: 20; 
+    padding: 0.5vw 1vw;
+    background: transparent;
+}
+
+.gohome .home-link img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+    filter: invert(1);
+    transition: transform 0.6s ease, background-color 0.6s ease; 
+}
+
+.gohome .home-link img:hover {
+    transform: scale(1.1);
+    background-color: rgb(97, 201, 92);
+}
+
+.head {
+    margin-top:50px;
+}
+
+.head:hover {
+    color: rgb(201, 92, 156);
+    cursor:grab;
+}
+
+/* Web List */
+
+.weblist {
+    margin-top:30px;
+}
+
+.weblist li {
+    margin-top:3vw;
+    margin-left:-40px;
+    list-style: none;
+    letter-spacing: 1.5px;
+}
+
+.weblist a {
+    text-decoration: none;
+    color:white;
+    font-size:1.5vw;
+    background-color: rgb(51, 51, 51);
+    transition: background-color 0.2s ease;
+    transition: font-size 0.2s ease; 
+}
+
+.weblist a:hover {
+    background-color: rgb(201, 92, 156);
+    font-size:1.7vw;
+}
+
+/* Responsive styles for phone */
+@media (max-width: 600px) {
+    body {
+        font-size: 3vw;
+    }
+    .head {
+        margin-top: 20vw;
+        text-align: center;
+    }
+    .weblist {
+        margin-top: 10vw;
+        text-align: center;
+    }
+    .weblist li {
+        margin-top: 6vw;
+        margin-left: 0;
+        font-size: 4vw;
+    }
+    .weblist a {
+        font-size: 4vw;
+        padding: 1vw 2vw;
+        display: inline-block;
+    }
+    .headlogo {
+        margin-top: 10vw;
+        justify-content: center;
+    }
+    .gohome {
+        padding: 2vw 3vw;
+    }
+}
+
+/* Responsive styles for desktop */
+@media (min-width: 601px) {
+    body {
+        font-size: 1vw;
+    }
+    .head {
+        margin-top: 50px;
+        text-align: left;
+    }
+    .weblist {
+        margin-top: 30px;
+        text-align: left;
+    }
+    .weblist li {
+        margin-top: 3vw;
+        margin-left: -40px;
+        font-size: 1.5vw;
+    }
+    .weblist a {
+        font-size: 1.5vw;
+        padding: 0.5vw 1vw;
+        display: inline;
+    }
+    .headlogo {
+        margin-top: 0;
+        justify-content: flex-start;
+    }
+    .gohome {
+        padding: 0.5vw 1vw;
+    }
+}

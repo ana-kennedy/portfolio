@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'DepartureMono';
+    src: url(assets/fonts/DepartureMono-Regular.otf);
+}
+
+body {
+    background-color: black;
+}
+
+
+
+html, body,
+body * {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Home Button */
+
+.gohome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20; 
+    padding: 0.5vw 1vw;
+    background: transparent;
+}
+
+.gohome .home-link img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+    filter: invert(1);
+    transition: transform 0.6s ease, background-color 0.6s ease; 
+}
+
+.gohome .home-link img:hover {
+    transform: scale(1.1);
+    background-color: rgb(97, 201, 92);
+}
+
+/* Header */
+
+.head h1 {
+    color: white;
+    font-size:2.0vw;
+    margin-top:40px;
+    font-family: DepartureMono;
+    text-align: left;
+    transition: color 0.2s ease;
+}
+
+.head h1:hover {
+    color: rgb(201, 92, 156);
+    cursor: grab;
+}
+
+.head {
+    margin-top: 50px;
+    text-align: left;
+}
+
+/* Albums */
+
+.albumheader {
+    color: white;
+    margin-top:20px;
+    font-family: DepartureMono;
+    text-align: left;
+}
+
+.albumheader h2 {
+    font-size:1.5vw;
+    transition: color 0.2s ease;
+}
+
+.albumheader h2:hover {
+    color: rgb(201, 92, 156);
+    cursor: grab;
+}
+
+.albumlist {
+    margin-top: 20px;
+    justify-content: left;
+    margin-left:-40px;
+}
+
+.albumlist a, li {
+    font-size:2.0vw;
+    color: white;
+    font-family: DepartureMono;
+    letter-spacing: -1px;
+    list-style:none;
+    text-align:left;
+}
+
+.albumlist li,
+.albumlist a {
+    background: #181818 !important;
+    transition: background 0.2s;
+    width:500px;
+}
+
+.albumlist li:hover,
+.albumlist a:hover {
+    background: rgb(201, 92, 156) !important;
+    color: #fff !important;
+}
+
+/* Media Queries */
+
+@media (min-width: 601px) {
+    .head h1 {
+        font-size: 1.8vw;
+        text-align: left;
+        margin-top: 40px;
+    }
+    .albumheader h2 {
+        font-size: 1.8vw;
+        text-align: left;
+    }
+    .albumlist a, .albumlist li {
+        font-size: 2vw;
+        text-align: left;
+        width:50vw;
+    }
+    .albums h2 {
+        font-size: 1.8vw;
+        text-align: left;
+    }
+    .albums img {
+        width: 260px;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 1.8vw;
+    }
+    .head h1 {
+        font-size: 1.8vw;
+        text-align: left;
+        margin-top: 10vw;
+        margin-left: 4vw;
+    }
+    .albumheader h2 {
+        font-size: 2.5vw;
+        text-align: left;
+        margin-left: 4vw;
+    }
+    .albumlist a, .albumlist li {
+        font-size: 2.5vw;
+        text-align: left;
+        margin-left: 2vw;
+        width:65vw;
+    }
+    .albums h2 {
+        font-size: 2.5vw;
+        text-align: left;
+        margin-left: 4vw;
+    }
+    .albums img {
+        width: 60vw;
+        max-width: 90vw;
+        display: block;
+        margin: 0 0 4vw 4vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+    .head h1 {
+        font-size: 1.2vw;
+    }
+    .albumheader h2 {
+        font-size: 1vw;
+    }
+    .albumlist a, .albumlist li {
+        font-size: 1.2vw;
+        width: 35vw;
+    }
+    .albums h2 {
+        font-size: 1vw;
+    }
+    .albums img {
+        width: 180px;
+    }
+}
