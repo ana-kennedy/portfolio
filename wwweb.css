@@ -79,29 +79,33 @@ body {
 /* Responsive styles for phone */
 @media (max-width: 600px) {
     body {
-        font-size: 3vw;
+        font-size: 2vw;
     }
     .head {
         margin-top: 20vw;
-        text-align: center;
+        text-align: left;
+        margin-left: 2vw;
     }
     .weblist {
         margin-top: 10vw;
-        text-align: center;
+        text-align: left;
+        margin-left: -8vw;
     }
     .weblist li {
-        margin-top: 6vw;
-        margin-left: 0;
-        font-size: 4vw;
+        margin-top: 4vw;
+        margin-left: 2vw;
+        font-size: 2.7vw;
+        text-align: left;
     }
     .weblist a {
-        font-size: 4vw;
+        font-size: 2.7vw;
         padding: 1vw 2vw;
         display: inline-block;
+        text-align: left;
     }
     .headlogo {
         margin-top: 10vw;
-        justify-content: center;
+        justify-content: flex-start;
     }
     .gohome {
         padding: 2vw 3vw;
