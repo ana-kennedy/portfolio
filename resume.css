@@ -862,6 +862,65 @@ body {
         padding: 2vw 4vw;
     }
 }
+@media (min-width: 1200px) {
+    body {
+        font-size: 13px;
+    }
+    .resume-header {
+        font-size: 1.1vw;
+        width: 28vw;
+        padding: 0.3vw 1vw;
+        min-height: 1.5vw;
+    }
+    .resume-content-one h1 {
+        font-size: 0.9vw;
+        padding: 0.3vw 1vw;
+        min-width: 8vw;
+        min-height: 1.5vw;
+    }
+    .resume-content-row {
+        gap: 0.7vw;
+    }
+    .objective-title,
+    .skills-title,
+    .homelab-title,
+    .featured-projects-title,
+    .currently-studying-title,
+    .resume-availability-title {
+        font-size: 1vw;
+        padding: 0.3vw 0;
+    }
+    .objective h1,
+    .skills-box h1,
+    .homelab-box h1,
+    .featured-projects-box h1,
+    .currently-studying-box h1,
+    .resume-availability-box h1 {
+        font-size: 0.9vw;
+        padding: 0.3vw 1vw;
+        min-height: 1.5vw;
+    }
+    .skills-title2,
+    .homelab-title2,
+    .featured-projects-title2 {
+        font-size: 0.8vw;
+        padding: 0.2vw 0.7vw 0.2vw 1vw;
+        min-width: 80px;
+    }
+    .resume-availability-box a {
+        font-size: 0.9vw;
+        padding: 0.3vw 1vw;
+        min-height: 1vw;
+    }
+    .objective-box,
+    .skills-box,
+    .homelab-box,
+    .featured-projects-box,
+    .currently-studying-box,
+    .resume-availability-box {
+        max-width: 700px;
+    }
+}
 
 canvas {
     position: fixed !important;

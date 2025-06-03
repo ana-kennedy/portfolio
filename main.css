@@ -364,13 +364,52 @@ body > *:last-child {
 }
 
 @media (min-width: 1200px) {
-    .projects,
-    .about,
-    .contact {
-        margin-top: 4vw;
+    .project-list {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3vw;
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: nowrap;
+        /* Make the hover area span the full width for easier access */
+        min-height: 8vw;
+        position: relative;
     }
-    .project-list a {
-        font-size: 1vw;
+    .projects {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0 4vw;
+    }
+    .projects:hover .project-link,
+    .projects.show-content .project-link {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .project-link {
+        font-size: 1.2vw;
+        min-width: 10vw;
+        max-width: 20vw;
+        text-align: center;
+        opacity: 0;
+        pointer-events: none;
+        margin: 0;
+        transition: opacity 0.3s;
+        /* Make each link fill available height for easier hover/click */
+        height: 8vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Expand the hover area for .projects to the full .project-list width */
+    .projects {
+        cursor: pointer;
     }
 }
 
