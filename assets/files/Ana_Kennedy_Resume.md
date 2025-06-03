@@ -1,0 +1,27 @@
+# Ana Kennedy Domville
+**Aspiring IT Specialist | Developer | Homelabber**
+
+### Objective
+To leverage my skills in IT, networking, and development for future roles while pursuing my CompTIA A+ certification.
+
+### Summary
+Self-starting IT enthusiast and developer with a strong foundation in systems administration, automation, and software development. Actively building a homelab and pursuing CompTIA A+. Experienced with macOS, Linux, and a variety of programming languages and frameworks.
+
+### Technical Skills
+- **Programming Languages**: C#, Python, JavaScript, NodeJS, ThreeJS, ElectronJS, HTML, CSS
+- **Tools**: VSCode, Neovim, Kitty Terminal, macOS Terminal, Linux Mint Terminal
+- **Operating Systems**: macOS, Linux Mint, Raspberry Pi OS
+- **Shells**: bash, zsh
+
+### Projects & Experience
+**Homelab**
+: Built a homelab on Raspberry Pi OS hosting SMB file shares between macOS and Linux Mint machines. Configured reFIND bootloaders for both systems. Set up Pi-hole DNS with Unbound for filtered and private DNS resolution.
+
+**Automation**
+: Created shell scripts to automate tasks such as file conversion and window tiling. Familiar with writing and debugging shell scripts.
+
+**Development**
+: Developed a dithering app using ElectronJS. Currently working on a Unity game called '4Get-Me-Not'.
+
+### Certifications
+- Pursuing: CompTIA A+ Certification

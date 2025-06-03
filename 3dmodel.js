@@ -8,7 +8,7 @@ if (!heroDiv) {
 }
 const w = window.innerWidth;
 const h = window.innerHeight;
-const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // alpha:true for transparency
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setClearAlpha(0); 
 renderer.setSize(w, h);
 renderer.domElement.style.position = "absolute";

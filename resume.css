@@ -1,0 +1,874 @@
+@font-face {
+    font-family: 'DepartureMono';
+    src: url(assets/fonts/DepartureMono-Regular.otf) format('opentype');
+}
+
+/* Home Button */
+
+.gohome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20; 
+    padding: 0.5vw 1vw;
+    background: transparent;
+}
+
+.gohome .home-link img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+    filter: invert(1);
+    transition: transform 0.6s ease, background-color 0.6s ease; 
+}
+
+.gohome .home-link img:hover {
+    transform: scale(1.1);
+    background-color: rgb(97, 201, 92);
+}
+
+body {
+    background-color: black;
+    color:white;
+    font-family: 'DepartureMono', monospace;
+}
+
+/* Resume Header */
+
+.resume-header {
+    text-align: center;
+    margin-top: 10vw;
+    border: solid 2px rgb(217, 173, 210);
+    border-radius:7px;
+    width:35vw;
+    font-size:2vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5vw 2vw;
+    min-height: 2.5vw;
+    background: rgba(0, 0, 0, 0.283);
+    
+}
+
+.resume-content-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 10vw;
+    border: none;
+    width: auto;
+    font-size: unset;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.resume-content-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1vw;
+    width: 100%;
+    margin-top:-70px;
+    margin-bottom:20px;
+}
+
+.resume-content-one h1 {
+    border: solid 2px rgb(217, 173, 210);
+    border-radius:7px;
+    background: rgba(0, 0, 0, 0.283);
+    color: #fff;
+    font-size: 1.5vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 0.5vw 2vw; 
+    margin: 0;
+    min-width: 12vw;
+    min-height: 2.5vw;  
+    text-align: center;
+    box-sizing: border-box;
+    word-break: break-word;
+    white-space: pre-line;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:40px;
+}
+
+/* Resume Blurbs */
+
+.objective {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 10vw;
+    border: none;
+    width: 75vw;
+    font-size: unset;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-20px;
+    text-align: center;
+}
+
+.objective-box,
+.skills-box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: solid 2px rgb(217, 173, 210);
+    background: rgba(0, 0, 0, 0.283);
+    border-radius: 0.7vw;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+    padding: 0;
+    min-width: 12vw;
+    width: auto;
+    box-sizing: border-box;
+    margin: 0;
+    gap: 0;
+}
+
+.skills-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(217,173,210,0.2);
+}
+
+.objective-title,
+.skills-title,
+.homelab-title,
+.featured-projects-title,
+.currently-studying-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 2px rgb(217, 173, 210);
+    width: 100%;
+    max-width: 100%;
+    color: #fff;
+    font-size: 2vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 0.5vw 0;
+    background: rgba(0, 0, 0, 0.543);
+    border-top-left-radius: 0.7vw;
+    border-top-right-radius: 0.7vw;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.objective h1 {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 2vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 1vw 2vw;
+    margin: 0;
+    min-width: 12vw;
+    min-height: 12vw;
+    text-align: center;
+    box-sizing: border-box;
+    word-break: break-word;
+    white-space: pre-line;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 8vw;
+    border: none;
+    width: auto;
+    font-size: unset;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.skills-box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: solid 2px rgb(217, 173, 210);
+    background: rgba(0, 0, 0, 0.283);
+    border-radius: 0.7vw;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+    padding: 0;
+    min-width: 12vw;
+    width: auto;
+    box-sizing: border-box;
+    margin: 0;
+    gap: 0;
+}
+
+.skills-title,
+.skills-title2 {
+    border-bottom: solid 2px rgb(217, 173, 210);
+    width: 100%;
+    color: #fff;
+    font-size: 2vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 0.5vw 0;
+    background: rgba(0,0,0,0.18);
+    text-align: center;
+    margin: 0;
+    border-top-left-radius: 0.7vw;
+    border-top-right-radius: 0.7vw;
+}
+
+.skills-title2 {
+    border: none;
+    border-radius: 0;
+    font-size: 1.2vw;
+    padding: 0.4vw 1vw 0.4vw 2vw;
+    background: transparent;
+    color: #ffffff;
+    font-family: 'DepartureMono', monospace;
+    width: 30%;
+    min-width: 120px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+.skills-box h1 {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size:2vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 0.4vw 2vw 0.4vw 1vw;
+    margin: 0;
+    min-width: 0;
+    min-height: 2vw;
+    text-align: right;
+    box-sizing: border-box;
+    word-break: break-word;
+    white-space: pre-line;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+
+/* Homelab & Projects Section */
+.homelab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 8vw;
+    border: none;
+    width: auto;
+    font-size: unset;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.homelab-box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: solid 2px rgb(217, 173, 210);
+    background: rgba(0, 0, 0, 0.283);
+    border-radius: 0.7vw;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+    padding: 0;
+    min-width: 12vw;
+    width: auto;
+    box-sizing: border-box;
+    margin: 0;
+    gap: 0;
+}
+
+.homelab-title {
+    border-bottom: solid 2px rgb(217, 173, 210);
+    width: 100%;
+    color: #fff;
+    font-size: 2vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 0.5vw 0;
+    background: rgba(0, 0, 0, 0.543);
+    border-top-left-radius: 0.7vw;
+    border-top-right-radius: 0.7vw;
+    text-align: center;
+    margin: 0;
+}
+
+.homelab-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(217,173,210,0.2);
+}
+
+.homelab-title2 {
+    border: none;
+    border-radius: 0;
+    font-size: 1.2vw;
+    padding: 0.4vw 1vw 0.4vw 2vw;
+    background: transparent;
+    color: #ffffff;
+    font-family: 'DepartureMono', monospace;
+    width: 30%;
+    min-width: 120px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+.homelab-box h1 {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size:2vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 0.4vw 2vw 0.4vw 1vw;
+    margin: 0;
+    min-width: 0;
+    min-height: 2vw;
+    text-align: right;
+    box-sizing: border-box;
+    word-break: break-word;
+    white-space: pre-line;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+
+/* Featured Projects Section */
+.featured-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 8vw;
+    border: none;
+    width: auto;
+    font-size: unset;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.featured-projects-box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: solid 2px rgb(217, 173, 210);
+    background: rgba(0, 0, 0, 0.283);
+    border-radius: 0.7vw;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+    padding: 0;
+    min-width: 12vw;
+    width: auto;
+    box-sizing: border-box;
+    margin: 0;
+    gap: 0;
+}
+
+.featured-projects-title {
+    border-bottom: solid 2px rgb(217, 173, 210);
+    width: 100%;
+    color: #fff;
+    font-size: 2vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 0.5vw 0;
+    background: rgba(0, 0, 0, 0.543);
+    border-top-left-radius: 0.7vw;
+    border-top-right-radius: 0.7vw;
+    text-align: center;
+    margin: 0;
+}
+
+.featured-projects-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(217,173,210,0.2);
+}
+
+.featured-projects-title2 {
+    border: none;
+    border-radius: 0;
+    font-size: 1.2vw;
+    padding: 0.4vw 1vw 0.4vw 2vw;
+    background: transparent;
+    color: #ffffff;
+    font-family: 'DepartureMono', monospace;
+    width: 30%;
+    min-width: 120px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.featured-projects-title2:hover {
+    background-color: rgb(217, 173, 210);
+    color: black;
+}
+
+.featured-projects-box h1 {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size:2vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 0.4vw 2vw 0.4vw 1vw;
+    margin: 0;
+    min-width: 0;
+    min-height: 2vw;
+    text-align: right;
+    box-sizing: border-box;
+    word-break: break-word;
+    white-space: pre-line;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.featured-projects-row h1 {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.featured-projects-row h1:hover {
+    background-color: rgb(217, 173, 210);
+    color: black;
+}
+
+.currently-studying {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 8vw;
+    border: none;
+    width: auto;
+    font-size: unset;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.currently-studying-box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: solid 2px rgb(217, 173, 210);
+    background: rgba(0, 0, 0, 0.283);
+    border-radius: 0.7vw;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+    padding: 0;
+    min-width: 12vw;
+    width: auto;
+    box-sizing: border-box;
+    margin: 0;
+    gap: 0;
+}
+
+.currently-studying-title {
+    border-bottom: solid 2px rgb(217, 173, 210);
+    width: 100%;
+    color: #fff;
+    font-size: 2vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 0.5vw 0;
+    background: rgba(0, 0, 0, 0.543);
+    border-top-left-radius: 0.7vw;
+    border-top-right-radius: 0.7vw;
+    text-align: center;
+    margin: 0;
+}
+
+.currently-studying-box h1 {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size:2vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 0.4vw 2vw 0.4vw 1vw;
+    margin: 0;
+    min-width: 0;
+    min-height: 2vw;
+    text-align: center;
+    box-sizing: border-box;
+    word-break: break-word;
+    white-space: pre-line;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Resume Availability Section */
+.resume-availability {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 8vw;
+    border: none;
+    width: 100%;
+    font-size: unset;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.resume-availability-box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: solid 2px rgb(217, 173, 210);
+    background: rgba(0, 0, 0, 0.283);
+    border-radius: 0.7vw;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+    padding: 0;
+    min-width: 12vw;
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    gap: 0;
+    overflow-x: hidden;
+}
+
+.resume-availability-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 2px rgb(217, 173, 210);
+    width: 100%;
+    max-width: 100%;
+    color: #fff;
+    font-size: 2vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 0.5vw 0;
+    background: rgba(0, 0, 0, 0.543);
+    border-top-left-radius: 0.7vw;
+    border-top-right-radius: 0.7vw;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.resume-availability-box h1 {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 2vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 1vw 2vw;
+    margin: 0;
+    min-width: 0;
+    min-height: 2vw;
+    text-align: center;
+    box-sizing: border-box;
+    word-break: break-word;
+    white-space: pre-line;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume-availability-box a {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 2vw;
+    font-family: 'DepartureMono', monospace;
+    padding: 0.5vw 2vw;
+    margin: 0;
+    min-width: 0;
+    min-height: 1vw;
+    text-align: center;
+    box-sizing: border-box;
+    word-break: break-word;
+    white-space: pre-line;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.resume-availability-box a:hover {
+    background-color: rgb(217, 173, 210);
+    color: black;
+}
+
+.objective-title:hover,
+.skills-title:hover,
+.skills-title2:hover,
+.homelab-title:hover,
+.homelab-title2:hover,
+.featured-projects-title:hover,
+.featured-projects-title2:hover,
+.currently-studying-title:hover,
+.resume-availability-title:hover,
+.resume-header h1:hover,
+.resume-content-one h1:hover,
+.skills-box h1:hover,
+.homelab-box h1:hover,
+.featured-projects-box h1:hover,
+.currently-studying-box h1:hover,
+.resume-availability-box h1:hover,
+.resume-availability-box a:hover {
+    background-color: rgb(201, 92, 156) !important;
+    color: #fff !important;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.objective-box h1:hover {
+    background-color: rgb(201, 92, 156) !important;
+    color: #fff !important;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+@media (max-width: 900px) {
+    .skills-box h1 {
+        font-size: 2vw;
+        min-width: 0;
+        min-height: 4vw;
+        padding: 2vw 4vw 2vw 1vw;
+    }
+    .skills-title,
+    .skills-title2 {
+        font-size: 2.5vw;
+        padding: 1vw 1vw 1vw 2vw;
+    }
+    .skills-title2 {
+        min-width: 90px;
+    }
+    .skills-row {
+        flex-direction: row;
+    }
+    .resume-content-row {
+        flex-direction: row;
+        gap: 3vw;
+        margin-top:-35px;
+    }
+    .resume-content-one h1 {
+        font-size: 3vw;
+        min-width: 20vw;
+        padding: 2vw 4vw;
+    }
+    .homelab-box h1 {
+        font-size: 2vw;
+        min-width: 0;
+        min-height: 4vw;
+        padding: 2vw 4vw 2vw 1vw;
+    }
+    .homelab-title,
+    .homelab-title2 {
+        font-size: 2.5vw;
+        padding: 1vw 1vw 1vw 2vw;
+    }
+    .homelab-title2 {
+        min-width: 90px;
+    }
+    .homelab-row {
+        flex-direction: row;
+    }
+    .featured-projects-box h1 {
+        font-size: 2vw;
+        min-width: 0;
+        min-height: 4vw;
+        padding: 2vw 4vw 2vw 1vw;
+    }
+    .featured-projects-title,
+    .featured-projects-title2 {
+        font-size: 2.5vw;
+        padding: 1vw 1vw 1vw 2vw;
+    }
+    .featured-projects-title2 {
+        min-width: 90px;
+    }
+    .featured-projects-row {
+        flex-direction: row;
+    }
+    .currently-studying-box h1 {
+        font-size: 2vw;
+        min-width: 0;
+        min-height: 4vw;
+        padding: 2vw 4vw 2vw 1vw;
+    }
+    .currently-studying-title {
+        font-size: 2.5vw;
+        padding: 1vw 1vw 1vw 2vw;
+    }
+    .resume-availability-box {
+        width: 95vw;
+        max-width: 95vw;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+    .resume-availability-title {
+        width: 100%;
+        max-width: 100%;
+        font-size: 2.5vw;
+        padding: 1vw 0;
+        box-sizing: border-box;
+    }
+    .resume-availability-box h1 {
+        font-size: 2vw;
+        min-width: 0;
+        min-height: 4vw;
+        padding: 2vw 4vw;
+    }
+    .resume-availability-box a {
+        font-size: 1.5vw;
+        min-width: 0;
+        min-height: 2vw;
+        padding: 1vw 3vw;
+    }
+}
+@media (max-width: 600px) {
+    .skills-box h1 {
+        font-size: 2vw;
+        min-width: 0;
+        min-height: 6vw;
+        padding: 3vw 5vw 3vw 2vw;
+    }
+    .skills-title,
+    .skills-title2 {
+        font-size: 2vw;
+        padding: 2vw 2vw 2vw 4vw;
+    }
+    .skills-title2 {
+        min-width: 70px;
+    }
+
+    .resume-header  {
+        width: 50vw;
+        font-size: 12px;
+        padding: 1vw 3vw;
+    }
+    .resume-content-row {
+        margin-bottom:-30px;
+    }
+    .objective {
+        margin-top: 5vw;
+        width:95vw;
+    }
+
+    .homelab-box h1 {
+        font-size: 2vw;
+        min-width: 0;
+        min-height: 6vw;
+        padding: 3vw 5vw 3vw 2vw;
+    }
+    .homelab-title,
+    .homelab-title2 {
+        font-size: 2vw;
+        padding: 2vw 2vw 2vw 4vw;
+    }
+    .homelab-title2 {
+        min-width: 70px;
+    }
+    .featured-projects-box h1 {
+        font-size: 2vw;
+        min-width: 0;
+        min-height: 6vw;
+        padding: 3vw 5vw 3vw 2vw;
+    }
+    .featured-projects-title,
+    .featured-projects-title2 {
+        font-size: 2vw;
+        padding: 2vw 2vw 2vw 4vw;
+    }
+    .featured-projects-title2 {
+        min-width: 70px;
+    }
+    .currently-studying-box h1 {
+        font-size: 2vw;
+        min-width: 0;
+        min-height: 6vw;
+        padding: 3vw 5vw 3vw 2vw;
+        border-bottom: 1.5px solid rgba(217,173,210,0.2);
+    }
+    .currently-studying-title {
+        font-size: 2vw;
+        padding: 2vw 2vw 2vw 4vw;
+    }
+    .resume-availability-box {
+        width: 96vw;
+        max-width: 96vw;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+    .resume-availability-title {
+        width: 100%;
+        max-width: 100%;
+        font-size: 2vw;
+        padding: 2vw 0;
+        box-sizing: border-box;
+    }
+    .resume-availability-box h1 {
+        font-size: 2vw;
+        min-width: 15vw;
+        min-height: 6vw;
+        padding: 3vw 5vw;
+    }
+    .resume-availability-box a {
+        font-size: 2vw;
+        min-width: 0;
+        min-height: 2vw;
+        padding: 2vw 4vw;
+    }
+}
+
+canvas {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+}
