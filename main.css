@@ -108,6 +108,7 @@ body {
     font-size: 3vw;
     margin-top: -1vw;
     flex-wrap: wrap;
+    width: 200%;
 }
 
 .project-link {
@@ -361,55 +362,78 @@ body > *:last-child {
         width: 18vw;
         max-width: 75px;
     }
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .project-link {
+        min-width: 60vw;
+        max-width: 95vw;
+        height: auto;
+        margin-bottom: 2vw;
+        font-size: 4vw;
+    }
 }
 
 @media (min-width: 1200px) {
+    .projects {
+        /* Make the hover area for .projects taller and wider */
+        width: 100vw;
+        max-width: 100vw;
+        min-width: 0;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+        position: relative;
+        z-index: 2;
+    }
     .project-list {
+        display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
+        align-items: stretch;
         gap: 3vw;
-        width: 100%;
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100vw;
+        max-width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
         flex-wrap: nowrap;
-        /* Make the hover area span the full width for easier access */
-        min-height: 8vw;
+        min-height: 12vw;
         position: relative;
+        z-index: 2;
+        /* Add extra invisible padding to left/right for easier hover */
+        padding-left: 8vw;
+        padding-right: 8vw;
     }
-    .projects {
-        width: 100%;
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
+    .project-link {
+        font-size: 1.2vw;
+        min-width: 10vw;
+        max-width: 20vw;
+        flex: 1 1 0;
         text-align: center;
-        box-sizing: border-box;
-        padding: 0 4vw;
+        opacity: 0;
+        pointer-events: none;
+        margin: 0;
+        transition: opacity 0.3s;
+        height: 8vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
     }
     .projects:hover .project-link,
     .projects.show-content .project-link {
         opacity: 1;
         pointer-events: auto;
     }
-    .project-link {
-        font-size: 1.2vw;
-        min-width: 10vw;
-        max-width: 20vw;
-        text-align: center;
-        opacity: 0;
-        pointer-events: none;
-        margin: 0;
-        transition: opacity 0.3s;
-        /* Make each link fill available height for easier hover/click */
-        height: 8vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /* Expand the hover area for .projects to the full .project-list width */
-    .projects {
-        cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .project-list {
+        width: 200%;
     }
 }
 
