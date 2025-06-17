@@ -83,6 +83,38 @@ body {
   white-space: pre-line;
 }
 
+.blog-section {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid cyan;
+  background-color: black;
+}
+
+.blog-section h3 {
+  color: #00ffff;
+  margin: 0 0 10px 0;
+}
+.blog-section h2 {
+  color: #ff00ff;
+  margin: 0 0 10px 0;
+  font-size:14px;
+}
+
+.blog-section p {
+  color: #ffffff;
+  font-size: 14px;
+  white-space: pre-line;
+  font-weight:100;
+}
+.blog-section img {
+ width:20px;
+ height:20px;
+}
+.blog-section img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
 .button-bar {
   margin-top: 10px;
   padding: 10px;
@@ -166,6 +198,16 @@ body {
   .section p {
     font-size: 13px;
   }
+  .blog-section {
+    padding: 8px;
+    font-size: 13px;
+  }
+  .blog-section h3 {
+    font-size: 16px;
+  }
+  .blog-section p {
+    font-size: 13px;
+  }
   .button-bar button {
     font-size: 11px;
     padding: 4px 8px;
@@ -213,6 +255,16 @@ body {
     font-size: 14px;
   }
   .section p {
+    font-size: 12px;
+  }
+  .blog-section {
+    padding: 6px;
+    font-size: 12px;
+  }
+  .blog-section h3 {
+    font-size: 14px;
+  }
+  .blog-section p {
     font-size: 12px;
   }
   .button-bar {
